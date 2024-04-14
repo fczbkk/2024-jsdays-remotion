@@ -1,0 +1,25 @@
+{
+  "name": "jsdays-video-for-developers",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "repository": {},
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.141",
+    "@remotion/zod-types": "4.0.141",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "4.0.141",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render HelloWorld out/video.mp4",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx"
+  },
+  "packageManager": "npm@9.6.4"
+}
