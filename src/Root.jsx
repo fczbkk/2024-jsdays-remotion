@@ -1,6 +1,9 @@
 import {Composition} from 'remotion';
 import {HelloWorld} from './HelloWorld';
 import {Logo} from './HelloWorld/Logo';
+import {Intro} from './Intro.jsx';
+import {Middle} from './Middle.jsx';
+import {Outro} from './Outro.jsx';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -20,7 +23,7 @@ export const RemotionRoot = () => {
 				// https://www.remotion.dev/docs/parametrized-rendering
 				defaultProps={{
 					titleText: 'Welcome to Remotion',
-					titleColor: 'black',
+					titleColor: 'black'
 				}}
 			/>
 			{/* Mount any React component to make it show up in the sidebar and work on it individually! */}
@@ -32,6 +35,9 @@ export const RemotionRoot = () => {
 				width={1920}
 				height={1080}
 			/>
+			<Composition id="Intro" component={Intro} fps={30} durationInFrames={90} height={1920} width={1080} />
+			<Composition id="Middle" component={Middle} fps={30} durationInFrames={90} height={1920} width={1080} />
+			<Composition id="Outro" component={Outro} fps={30} durationInFrames={90} height={1920} width={1080} />
 		</>
 	);
 };

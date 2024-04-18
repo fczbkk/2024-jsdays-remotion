@@ -18,6 +18,9 @@
   "scripts": {
     "start": "remotion studio",
     "build": "remotion render HelloWorld out/video.mp4",
+    "build:intro": "remotion render Intro out/intro.mp4",
+    "build:middle": "remotion render Middle out/middle.mp4",
+    "build:outro": "remotion render Outro out/outro.mp4",
     "upgrade": "remotion upgrade",
     "test": "eslint src --ext ts,tsx,js,jsx"
   },
